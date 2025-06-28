@@ -31,7 +31,7 @@ Build and install the app
 
 ```bash
   python3 -m build
-  pip install dist/dirdiff-0.1.0-py3-none-any.whl
+  pip install dist/*.whl
 ```
 
 Test the command

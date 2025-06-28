@@ -1,7 +1,7 @@
 [project]
 name = "dirdiff"
-version = "0.1.0"
-description = "Shows what Diff between two directories"
+version = "0.1.1"
+description = "CLI tool that prints diff between two given directories"
 readme = "README.md"
 authors = [
     { name = "Joao Hugo Vasconcelos", email = "jhugovasconcelos93@gmail.com" }
