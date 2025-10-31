@@ -3,12 +3,19 @@ from dirdiff.directories import get_files_in_dir
 
 
 def show_diff(base_directory:str, compare_directory:str):
+  """
+  Shows the diff between two given directories.
+  """
   l1 = get_files_in_dir(base_directory)
   l2 = get_files_in_dir(compare_directory)
   
+  """
+  Separating the unique values in each list and creating a list with common values.
+  """
   common = sorted([u for u in l1 if u in l2])
   unique_l1 = sorted([u for u in l1 if u not in l2])
   unique_l2 = sorted([u for u in l2 if u not in l1])
+ 
 
   len_common = len(common)
   len_u1 = len(unique_l1)
